@@ -1,15 +1,19 @@
-Simple Calculator using PHP OOP.
+# Simple Calculator using PHP OOP.
 
-### Introduction
+## Introduction
 
 Very simple calculator built using PHP OOP.
 
 Supporting following arithmethic operators:
 
 Adder
+
 Substractor
+
 Divider
+
 Multiplier
+
 
 ## Usage instructions:
 Initialize the Calculator:
@@ -33,15 +37,14 @@ Get the result:
 ```php
 echo $c->getResult();
 ```
-### Result: 10
-### Note:
-
-By default it remembers the result of each calculation and perform next calculation based on the previous calculation result.
-Calculation result can be cleaned as:
+## Result: 12
+## Preserved calculation results:
+By default it remembers the result of each calculation and performs next calculation(s) based on the previous calculation(s) result.
+You can clear previous Calculation(s) result as:
 ```php
 $c->clearResult();
 ```
-## Example:
+## Complete Example:
 
 ```php
 require_once 'inc/init.php';

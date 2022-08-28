@@ -10,7 +10,7 @@ echo $c->getResult() . "\n\n";  // 12
 
 $c->clearResult();
 
-$c->calculate(28, 12);
+$c->calculate(18, 12, 10);
 echo $c->getResult() . "\n\n";  // 40
 
 $c->setOperation(new Divider);

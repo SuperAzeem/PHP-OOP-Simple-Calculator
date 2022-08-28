@@ -1,9 +1,47 @@
 Simple Calculator using PHP OOP.
 
-## Quick Example
+### Introduction
 
-The recommended way is by using the simple helper methods, but a utility method is available and direct access to many of the underlying classes is also possible. If you wish to interact with the underlying classes, read the documentation in the code.
+Very simple calculator built using PHP OOP.
 
+Supporting following arithmethic operators:
+
+Adder
+Substractor
+Divider
+Multiplier
+
+## Usage instructions:
+Initialize the Calculator:
+
+```php
+require_once 'inc/init.php';
+
+$c = new Calculator;
+
+```
+Set required operation:
+```php
+$c->setOperation(new Adder);
+
+```
+Call calculate method:
+```php
+$c->calculate(10, 2);
+```
+Get the result:
+```php
+echo $c->getResult();
+```
+### Result: 10
+### Note:
+
+By default it remembers the result of each calculation and perform next calculation based on the previous calculation result.
+Calculation result can be cleaned as:
+```php
+$c->clearResult();
+```
+## Example:
 
 ```php
 require_once 'inc/init.php';
